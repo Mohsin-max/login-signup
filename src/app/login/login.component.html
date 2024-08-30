@@ -1,0 +1,10 @@
+<div class="box">
+    <form class="login" (ngSubmit)="onLogin()">
+        <h1>LOGIN</h1>
+        <input type="text" placeholder="Username" name="username" [(ngModel)]="userObj.username">
+        <input type="password" placeholder="Password" name="password" [(ngModel)]="userObj.password">
+        <p>Don't have an account? <a routerLink="/signup">Sign Up</a></p>
+        <p class="message">{{message}}</p>
+        <button>Login</button>
+      </form>
+</div>
